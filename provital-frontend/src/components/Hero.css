@@ -4,6 +4,8 @@
   position: relative;
   overflow: hidden;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero .container {
@@ -100,9 +102,10 @@
   text-align: center;
   position: relative;
   z-index: 4;
-  padding: 60px 40px;
+  padding: 6px 4px;
   max-width: 700px;
   width: 100%;
+  margin-top: -80px;
 }
 
 .hero__right h1 {
@@ -126,6 +129,17 @@
   font-weight: 400;
 }
 
+/* New search container positioned below the main content */
+.hero__search-container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 60px;
+  margin-top: -280px; /* Move search bar much closer to the text */
+}
+
 .hero__search {
   display: flex;
   gap: 0;
@@ -140,7 +154,6 @@
   width: 100%;
   max-width: 800px;
   align-items: stretch;
-  margin-top: 40px;
 }
 
 .search-field {
@@ -255,7 +268,7 @@
     grid-template-columns: 1fr;
     gap: 0;
     height: auto;
-    min-height: 100vh;
+    min-height: 70vh;
   }
 
   .hero__left {
@@ -268,7 +281,7 @@
   }
 
   .hero__right {
-    margin-top: 20px;
+    margin-top: -60px;
     padding: 40px 30px;
     height: auto;
     text-align: center;
@@ -281,14 +294,17 @@
 
   .hero__right p {
     text-align: center;
+    margin-bottom: 10px; /* Reduced margin to bring search closer */
+  }
+
+  .hero__search-container {
+    margin-top: -70px; /* Move search much closer to text on tablets */
+    padding: 20px 20px 60px;
   }
 
   .hero__search {
-    position: static;
-    transform: none;
     width: 100%;
     max-width: 100%;
-    margin-top: 30px;
   }
 
   .hero__image {
@@ -322,34 +338,27 @@
   }
 
   .hero__right {
-    padding: 30px 20px;
-    margin-top: 20px;
+    padding: 30px 5px;
+    margin-top: -100px;
     height: auto;
     text-align: center;
   }
 
   .hero__right h1 {
     text-align: center;
-  }
-
-  .hero__right p {
-    text-align: center;
-  }
-
-  .hero__search {
-    position: static;
-    transform: none;
-    margin-top: 20px;
-  }
-
-  .hero__right h1 {
     font-size: 28px;
     margin-bottom: 15px;
   }
 
   .hero__right p {
+    text-align: center;
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 10px; /* Reduced margin for mobile */
+  }
+
+  .hero__search-container {
+    margin-top: -80px; /* Move search much closer to text on mobile */
+    padding: 20px 15px 40px;
   }
 
   .hero__search {
@@ -398,5 +407,9 @@
 
   .hero__search {
     padding: 6px;
+  }
+
+  .hero__search-container {
+    padding: 20px 15px 30px;
   }
 }
