@@ -24,42 +24,36 @@ const HowItWorks = () => {
   const cardData = [
     {
       icon: NutritionIcon,
-      emoji: "🥗",
       title: "Nutrition",
       desc: "Evidence supports the use of a whole food, plant-predominant diet to prevent, treat and reverse chronic illness.",
       metric: "124/80 mmHg",
     },
     {
       icon: Physicalactivity,
-      emoji: "🏃",
       title: "Physical activity",
       desc: "Regular physical activity is key to managing weight, improving mental health, and reducing risk of chronic disease.",
       metric: "32 minutes",
     },
     {
       icon: Restorativesleep,
-      emoji: "😴",
       title: "Restorative sleep",
       desc: "Consistent, quality sleep is essential for cognitive function, emotional regulation, and physical recovery.",
       metric: "8 hours",
     },
     {
       icon: Stressmanagement,
-      emoji: "🧘",
       title: "Stress management",
       desc: "Effective stress management techniques are crucial for mental well-being and overall health.",
       metric: "90/100",
     },
     {
       icon: Socialconnection,
-      emoji: "👥",
       title: "Social connection",
       desc: "Strong social connections are associated with a lower risk of many chronic diseases and enhanced mental health.",
       metric: "78/100",
     },
     {
       icon: Substanceabuse,
-      emoji: "🚭",
       title: "Substance abuse",
       desc: "Avoiding tobacco, limiting alcohol use, and abstaining from harmful substances are vital for long-term health.",
       metric: "47/100",

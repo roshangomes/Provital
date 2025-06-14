@@ -28,7 +28,19 @@ const Hero = () => {
             <div className="hero__image">
               <img src={Rectangle7} alt="Wellness" />
             </div>
-            {/* Duplicates for looping */}
+            <div className="hero__image">
+              <img src={Rectangle2} alt="Health lifestyle" />
+            </div>
+            <div className="hero__image">
+              <img src={Rectangle4} alt="Nutrition" />
+            </div>
+            <div className="hero__image">
+              <img src={Rectangle6} alt="Medical care" />
+            </div>
+            <div className="hero__image">
+              <img src={Rectangle8} alt="Wellness" />
+            </div>
+            {/* Additional duplicates for seamless looping */}
             <div className="hero__image">
               <img src={Rectangle1} alt="Health lifestyle" />
             </div>
@@ -56,7 +68,19 @@ const Hero = () => {
             <div className="hero__image">
               <img src={Rectangle8} alt="Medical care" />
             </div>
-            {/* Duplicates for looping */}
+            <div className="hero__image">
+              <img src={Rectangle1} alt="Wellness" />
+            </div>
+            <div className="hero__image">
+              <img src={Rectangle3} alt="Medical care" />
+            </div>
+            <div className="hero__image">
+              <img src={Rectangle5} alt="Health lifestyle" />
+            </div>
+            <div className="hero__image">
+              <img src={Rectangle7} alt="Medical care" />
+            </div>
+            {/* Additional duplicates for seamless looping */}
             <div className="hero__image">
               <img src={Rectangle2} alt="Wellness" />
             </div>
@@ -81,7 +105,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Search bar moved outside the grid container */}
+      {/* Search bar */}
       <div className="hero__search-container">
         <div className="hero__search">
           <div className="search-field">
@@ -167,6 +191,49 @@ const Hero = () => {
             </svg>
             Find now
           </button>
+        </div>
+      </div>
+
+      {/* Mobile single row of horizontal scrolling images */}
+      <div className="hero__mobile-images">
+        <div className="hero__mobile-row">
+          <div className="hero__mobile-image">
+            <img src={Rectangle1} alt="Health lifestyle" />
+          </div>
+          <div className="hero__mobile-image">
+            <img src={Rectangle2} alt="Wellness" />
+          </div>
+          <div className="hero__mobile-image">
+            <img src={Rectangle3} alt="Nutrition" />
+          </div>
+          <div className="hero__mobile-image">
+            <img src={Rectangle4} alt="Medical care" />
+          </div>
+          <div className="hero__mobile-image">
+            <img src={Rectangle5} alt="Medical care" />
+          </div>
+          <div className="hero__mobile-image">
+            <img src={Rectangle6} alt="Health lifestyle" />
+          </div>
+          <div className="hero__mobile-image">
+            <img src={Rectangle7} alt="Wellness" />
+          </div>
+          <div className="hero__mobile-image">
+            <img src={Rectangle8} alt="Medical care" />
+          </div>
+          {/* Duplicates for seamless infinite scroll */}
+          <div className="hero__mobile-image">
+            <img src={Rectangle1} alt="Health lifestyle" />
+          </div>
+          <div className="hero__mobile-image">
+            <img src={Rectangle2} alt="Wellness" />
+          </div>
+          <div className="hero__mobile-image">
+            <img src={Rectangle3} alt="Nutrition" />
+          </div>
+          <div className="hero__mobile-image">
+            <img src={Rectangle4} alt="Medical care" />
+          </div>
         </div>
       </div>
     </section>

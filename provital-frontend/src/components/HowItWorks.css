@@ -194,6 +194,22 @@
   background-color: #1abc9c;
 }
 
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .title-with-arrows {
+    justify-content: center;
+  }
+
+  .carousel-arrows {
+    display: none;
+  }
+
+  .pillars-nav {
+    display: none;
+  }
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
   .how-it-works {
     padding: 60px 0;
@@ -201,6 +217,10 @@
 
   .how-it-works .container {
     padding: 0 20px;
+  }
+
+  .title-with-arrows {
+    justify-content: center;
   }
 
   .section-title {
@@ -212,7 +232,7 @@
   }
 
   .pillars-nav {
-    gap: 15px;
+    display: none;
   }
 
   .pillar-btn {
