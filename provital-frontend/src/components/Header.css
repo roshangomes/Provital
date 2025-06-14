@@ -1,7 +1,7 @@
 .header {
   background: #fff;
   border-bottom: 1px solid #eee;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -13,12 +13,28 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: 1800px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 40px;
+}
+
+.header__logo-container {
+  display: flex;
+  align-items: center;
 }
 
 .header__logo {
   height: 40px;
+  display: block;
+  object-fit: contain;
+}
+
+.header__logo-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-left: 0.25rem; /* Reduced from 0.5rem to bring text closer */
+  vertical-align: middle;
 }
 
 .header__nav ul {
@@ -27,6 +43,20 @@
   gap: 2rem;
   margin: 0;
   padding: 0;
+}
+
+.header__nav ul li {
+  position: relative;
+}
+
+.header__nav ul li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 16px;
 }
 
 .header__nav ul a {
@@ -42,15 +72,23 @@
   color: #ff7e5f;
 }
 
-.header__nav ul .highlighted {
-  background: linear-gradient(90deg, #ff7e5f, #feb47b);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-}
-
 .header__nav ul .dropdown {
   position: relative;
+}
+
+.header__nav ul .dropdown-toggle {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.header__nav ul .dropdown-toggle:hover {
+  color: #ff7e5f;
 }
 
 .header__nav ul .dropdown-content {
@@ -62,26 +100,47 @@
   padding: 0.5rem;
   top: 2.5rem;
   right: 0;
-  min-width: 150px;
+  min-width: 250px; /* Increased width to fit buttons */
+  z-index: 1001;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
 }
 
-.header__nav ul .dropdown:hover .dropdown-content {
+.header__nav ul .dropdown.dropdown-open .dropdown-content {
   display: block;
+  opacity: 1;
 }
 
-.header__nav ul .dropdown-content a {
-  display: block;
+.header__nav ul .dropdown-content .dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.5rem 1rem;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #333;
-  text-decoration: none;
+}
+
+.header__nav ul .dropdown-content .dropdown-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header__nav ul .dropdown-content .dropdown-button {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: blue;
+  border-radius: 4px;
+  text-decoration: underline;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.header__nav ul .dropdown-content a:hover {
-  background-color: #f4f4f9;
-  color: #ff7e5f;
+.header__nav ul .dropdown-content .dropdown-button:hover {
+  /* Darker blue on hover */
+  color: #007bff;
 }
 
 .header__mobile {
@@ -89,6 +148,7 @@
   font-size: 24px;
   cursor: pointer;
   color: #333;
+  line-height: 1;
 }
 
 @media (max-width: 768px) {
@@ -101,6 +161,9 @@
     width: 100%;
     background: #fff;
     border-top: 1px solid #eee;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 
   .header__nav.mobile-open {
@@ -114,21 +177,43 @@
     padding: 1.5rem;
   }
 
+  .header__nav ul li:not(:last-child)::after {
+    content: none;
+  }
+
   .header__nav ul a {
     font-size: 16px;
   }
 
-  .header__nav ul .highlighted {
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-  }
-
   .header__nav ul .dropdown-content {
+    display: none;
     position: static;
     box-shadow: none;
     padding: 0.5rem 1rem;
     background: #f9f9f9;
     border-radius: 5px;
+    opacity: 1;
+    min-width: 100%; /* Full width on mobile */
+  }
+
+  .header__nav ul .dropdown.dropdown-open .dropdown-content {
+    display: block;
+  }
+
+  .header__nav ul .dropdown-content .dropdown-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .header__nav ul .dropdown-content .dropdown-buttons {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .header__nav ul .dropdown-content .dropdown-button {
+    width: 100%;
+    text-align: center;
   }
 
   .header__mobile {

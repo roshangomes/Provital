@@ -97,7 +97,7 @@ const HowItWorks = () => {
             <strong className="gradient-text">
               <i>Lifestyle as medicine:</i>
             </strong>{" "}
-            The six pillars.
+            The six pillars
           </p>
 
           <div className="pillars-nav">
