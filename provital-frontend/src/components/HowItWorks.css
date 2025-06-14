@@ -1,0 +1,239 @@
+.how-it-works {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.how-it-works .container {
+  max-width: 1800px;
+  margin: 0;
+  padding: 0 0 0 80px;
+  text-align: left;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.title-with-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: "Inter", sans-serif; /* Updated font family */
+  font-size: 16px; /* Slightly increased for better match */
+  font-weight: 700; /* Bolder weight */
+  color: #333;
+  margin-bottom: 0;
+  letter-spacing: 2px; /* Adjusted letter spacing */
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-family: "Inter", sans-serif; /* Updated font family */
+  font-size: 28px;
+  font-weight: 400; /* Lighter weight for subtitle */
+  color: #666;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.section-subtitle .gradient-text {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #333;
+}
+
+.pillars-nav {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.pillar-btn {
+  font-family: "Roboto", sans-serif; /* Updated font family */
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: 1px solid #555; /* Added blackish border */
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+.pillar-btn.active {
+  background: #333;
+  color: white;
+  border-color: #333; /* Match border color with background when active */
+}
+
+.pillar-btn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.pillar-btn.active:hover {
+  background: #333;
+}
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+}
+
+.cards-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.cards-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.lifestyle-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  width: 493px;
+  flex-shrink: 0;
+}
+
+.lifestyle-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 493px;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.lifestyle-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-rating {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.card-title {
+  font-family: "Roboto", sans-serif; /* Updated font family */
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.card-description {
+  font-family: "Roboto", sans-serif; /* Updated font family */
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.carousel-arrows {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+.carousel-arrow {
+  background-color: #ffffff;
+  color: #747474;
+  border: #c6c6c6 1px solid;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  background-color: #1abc9c;
+}
+
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 60px 0;
+  }
+
+  .how-it-works .container {
+    padding: 0 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .pillars-nav {
+    gap: 15px;
+  }
+
+  .pillar-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .lifestyle-card {
+    width: 282px;
+  }
+
+  .card-image {
+    width: 282px;
+    height: 255px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .carousel-arrows {
+    display: none;
+  }
+}
