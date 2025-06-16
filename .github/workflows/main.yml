@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - master
 permissions:
   contents: write
   pages: write
@@ -28,3 +28,5 @@ jobs:
         with:
           folder: provital-frontend/build
           branch: gh-pages
+          clean: true
+          single-commit: true
