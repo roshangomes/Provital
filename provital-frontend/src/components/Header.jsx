@@ -26,22 +26,22 @@ const Header = () => {
         <nav className={`header__nav ${isMobileMenuOpen ? "mobile-open" : ""}`}>
           <ul>
             <li>
-              <a>List your practice</a>
+              <a href="/list-your-practice">List your practice</a>
             </li>
             <li>
-              <a>For Employers</a>
+              <a href="/for-employers">For Employers</a>
             </li>
             <li>
-              <a>Courses</a>
+              <a href="/courses">Courses</a>
             </li>
             <li>
-              <a>Books</a>
+              <a href="/books">Books</a>
             </li>
             <li>
-              <a>Speakers</a>
+              <a href="/speakers">Speakers</a>
             </li>
             <li>
-              <a>Doctors</a>
+              <a href="/doctors">Doctors</a>
             </li>
             <li className={`dropdown ${isDropdownOpen ? "dropdown-open" : ""}`}>
               <span className="dropdown-toggle" onClick={toggleDropdown}>
