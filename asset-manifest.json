@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/provital/static/css/main.819c460e.css",
+    "main.js": "/provital/static/js/main.4f27c312.js",
+    "static/js/584.50eed349.chunk.js": "/provital/static/js/584.50eed349.chunk.js",
+    "static/media/stress.png": "/provital/static/media/stress.660cb9141c85086eee17.png",
+    "static/media/pactivity.png": "/provital/static/media/pactivity.f9e8d825c1fe47906baf.png",
+    "static/media/nutrition.png": "/provital/static/media/nutrition.0e7bffd015b23eddbc61.png",
+    "static/media/substance.png": "/provital/static/media/substance.7057f4823c761c88ee1a.png",
+    "static/media/sleep.png": "/provital/static/media/sleep.6af6d02154140221c65a.png",
+    "static/media/social.png": "/provital/static/media/social.1f32a7298337247d44ad.png",
+    "static/media/Rectangle5.png": "/provital/static/media/Rectangle5.828fceef5c42f4537f0e.png",
+    "static/media/Rectangle4.png": "/provital/static/media/Rectangle4.ea9ec23718836bbd809f.png",
+    "static/media/Rectangle2.png": "/provital/static/media/Rectangle2.93728632c2b5efecf43f.png",
+    "static/media/Rectangle7.png": "/provital/static/media/Rectangle7.f6bef1c9a8d86af310f8.png",
+    "static/media/Rectangle8.png": "/provital/static/media/Rectangle8.871cd41a819b2cde751c.png",
+    "static/media/Rectangle1.png": "/provital/static/media/Rectangle1.6ba647ae836d1c73759b.png",
+    "static/media/Rectangle3.png": "/provital/static/media/Rectangle3.e363cc12244e0009811d.png",
+    "static/media/Rectangle6.png": "/provital/static/media/Rectangle6.f22a96109078545c1487.png",
+    "service-worker.js": "/provital/service-worker.js",
+    "index.html": "/provital/index.html",
+    "main.819c460e.css.map": "/provital/static/css/main.819c460e.css.map",
+    "main.4f27c312.js.map": "/provital/static/js/main.4f27c312.js.map",
+    "584.50eed349.chunk.js.map": "/provital/static/js/584.50eed349.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.819c460e.css",
+    "static/js/main.4f27c312.js"
+  ]
+}
