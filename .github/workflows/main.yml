@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: provital-frontend/package-lock.json
+      - name: Install Dependencies
+        run: cd provital-frontend && npm ci
+      - name: Build
+        run: cd provital-frontend && npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: provital-frontend/build
+          branch: gh-pages
