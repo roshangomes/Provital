@@ -2,7 +2,7 @@
   "name": "provital-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://roshangomes.github.io/provital",
+  "homepage": "https://roshangomes.github.io/Provital",
   "dependencies": {
     "cra-template-pwa": "2.0.0",
     "react": "^19.1.0",
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
